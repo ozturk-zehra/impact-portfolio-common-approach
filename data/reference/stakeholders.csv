@@ -1,0 +1,6 @@
+stakeholder_id,stakeholder,description,impact_norms_role,is_underserved,importance,from_perspective_of
+S1,Planet,The natural environment and the climate system.,Planet,false,high importance,Intergovernmental Panel on Climate Change (IPCC) - importance assessed on behalf of the stakeholder
+S2,Low-income renter households,Households paying below-market rent in portfolio-financed buildings.,Customers,true,high importance,Tenant survey (fictional)
+S3,Workers at portfolio enterprises,People employed by portfolio organizations and their financed businesses.,Employees,false,high importance,Portfolio organization (estimated on behalf of the stakeholder)
+S4,Job seekers facing employment barriers,Training participants facing barriers to employment.,Customers,true,high importance,Participant feedback sessions (fictional)
+S5,Indigenous community members,Community members enrolled in the weekly food box program.,Communities,true,high importance,Community advisory circle (fictional)

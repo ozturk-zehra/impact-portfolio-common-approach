@@ -1,0 +1,4 @@
+factor_id,from_unit,to_unit,value,harmonization_type,source,note
+F1,households,people,2.4,Proxy-value transformation,"Statistics Canada, 2021 Census of Population: average household size, Canada (2.4 persons).",National average used as a conservative placeholder. Replace with a regional census figure for the investee's municipality where available.
+F2,MWh,tCO2e,0.45,Proxy-value transformation,ILLUSTRATIVE PLACEHOLDER - not an official factor.,Replace with the provincial electricity grid emission intensity for the reporting year from Canada's National Inventory Report (Environment and Climate Change Canada).
+F3,kWh,MWh,0.001,Fixed-value conversion,1 MWh = 1000 kWh (SI definition).,Universal physical equivalence.

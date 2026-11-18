@@ -1,0 +1,2 @@
+adjustment_id,headline_id,report_id,deduction,rationale,evidence
+A1,H4,R018,23,"Greenway Community Loan Fund's investee-level file lists Northern Table Social Enterprise with 23 jobs (14 full-time + 9 part-time). Those jobs are already counted through the direct holding (R012, R013).",Cross-referenced the GCL investee list against direct holdings by legal name.

@@ -1,0 +1,23 @@
+report_id,holding_id,metric_as_reported,value,unit_as_reported,period_start,period_end,report_type,evidence_level,reporting_layer,investee_note
+R001,CED,Clean electricity generated,4200,MWh,2025-01-01,2025-12-31,actual,third-party verified,investee,Metered output from three community solar arrays.
+R002,CED,GHG emissions avoided,1260,tCO2e,2025-01-01,2025-12-31,actual,third-party verified,investee,Calculated by the co-op from R001 using its own grid factor.
+R003,CED,Projected clean electricity generation 2026,5100,MWh,2026-01-01,2026-12-31,forecast,self-reported,investee,Includes a fourth array under construction.
+R004,CED,Member-owners of the co-operative,610,members,2025-01-01,2025-12-31,actual,self-reported,investee,Governance metric.
+R005,HHS,Households living in below-market rental units,340,households,2024-04-01,2025-03-31,actual,self-reported,investee,Fiscal year ends March 31.
+R006,HHS,Average rent as a percentage of market rent,72,percent,2024-04-01,2025-03-31,actual,self-reported,investee,No market-rent comparison data supplied.
+R007,HHS,Construction jobs supported (new building),45,jobs,2024-04-01,2025-03-31,actual,self-reported,investee,Temporary trades roles during construction.
+R008,RRS,Homes retrofitted (Q1),38,homes,2025-01-01,2025-03-31,actual,self-reported,investee,Quarterly report.
+R009,RRS,Homes retrofitted (Q2),46,homes,2025-04-01,2025-06-30,actual,self-reported,investee,Quarterly report.
+R010,RRS,Homes retrofitted (Q3),51,homes,2025-07-01,2025-09-30,actual,self-reported,investee,Quarterly report. Q4 report not yet received.
+R011,RRS,Average annual energy saved per retrofitted home,9500,MWh per home,2025-01-01,2025-12-31,actual,self-reported,investee,Modelled savings from pre/post energy audits.
+R012,NTS,Full-time jobs created,14,jobs,2025-01-01,2025-12-31,actual,self-reported,investee,Permanent roles.
+R013,NTS,Part-time jobs created,9,jobs,2025-01-01,2025-12-31,actual,self-reported,investee,Permanent part-time roles.
+R014,NTS,Community members receiving weekly food boxes,1150,people,2025-01-01,2025-12-31,actual,self-reported,investee,Unique individuals from the enrolment list.
+R015,NTS,Community feasts and events hosted,22,events,2025-01-01,2025-12-31,actual,self-reported,investee,Attendance not tracked.
+R016,NTS,Households receiving one-time emergency food hampers,180,households,2025-01-01,2025-12-31,actual,self-reported,investee,Winter emergency response.
+R017,GCL,Jobs sustained across fund portfolio (fund total),410,jobs,2025-01-01,2025-12-31,actual,self-reported,fund total,Fund-level roll-up reported by the intermediary.
+R018,GCL,Jobs sustained at financed businesses (investee-level detail),404,jobs,2025-01-01,2025-12-31,actual,self-reported,investee,Sum of investee-level file for 62 businesses. Includes Northern Table Social Enterprise.
+R019,LLC,Participants completing employment training,260,people,2025-01-01,2025-12-31,actual,self-reported,investee,Unique completers.
+R020,LLC,Completers employed within six months,58,percent,2025-01-01,2025-12-31,actual,third-party verified,investee,Follow-up survey verified by an external evaluator.
+R021,LLC,Training hours delivered,15600,hours,2025-01-01,2025-12-31,actual,self-reported,investee,Classroom and work-placement hours.
+R022,LLC,Participants who self-identify as Indigenous,41,percent,2025-01-01,2025-12-31,actual,self-reported,investee,Voluntary self-identification at intake.

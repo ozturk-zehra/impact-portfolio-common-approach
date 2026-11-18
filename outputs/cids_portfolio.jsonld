@@ -1,0 +1,2488 @@
+{
+  "@context": {
+    "cids": "https://ontology.commonapproach.org/cids#",
+    "i72": "http://ontology.eil.utoronto.ca/ISO21972/iso21972#",
+    "org": "http://ontology.eil.utoronto.ca/tove/organization#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prov:startedAtTime": {
+      "@type": "xsd:dateTime"
+    },
+    "prov:endedAtTime": {
+      "@type": "xsd:dateTime"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://example.org/maple-ridge/code/SDG-7",
+      "@type": "cids:Code",
+      "cids:hasName": "SDG 7",
+      "cids:hasSpecification": {
+        "@id": "https://sdgs.un.org/goals/goal7"
+      },
+      "cids:hasDescription": "Alignment: conceptual (Common Framework 3.4.2)"
+    },
+    {
+      "@id": "https://example.org/maple-ridge/code/SDG-13",
+      "@type": "cids:Code",
+      "cids:hasName": "SDG 13",
+      "cids:hasSpecification": {
+        "@id": "https://sdgs.un.org/goals/goal13"
+      },
+      "cids:hasDescription": "Alignment: conceptual (Common Framework 3.4.2)"
+    },
+    {
+      "@id": "https://example.org/maple-ridge/theme/T1",
+      "@type": "cids:Theme",
+      "cids:hasName": "Climate action",
+      "cids:hasDescription": "Reducing greenhouse gas emissions and increasing clean energy.",
+      "cids:hasCode": [
+        {
+          "@id": "https://example.org/maple-ridge/code/SDG-7"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/code/SDG-13"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/code/SDG-target-11-1",
+      "@type": "cids:Code",
+      "cids:hasName": "SDG target 11.1",
+      "cids:hasSpecification": {
+        "@id": "https://sdgs.un.org/goals/goal11"
+      },
+      "cids:hasDescription": "Alignment: conceptual (Common Framework 3.4.2)"
+    },
+    {
+      "@id": "https://example.org/maple-ridge/theme/T2",
+      "@type": "cids:Theme",
+      "cids:hasName": "Affordable housing",
+      "cids:hasDescription": "People living in housing they can afford.",
+      "cids:hasCode": [
+        {
+          "@id": "https://example.org/maple-ridge/code/SDG-target-11-1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/code/SDG-target-8-5",
+      "@type": "cids:Code",
+      "cids:hasName": "SDG target 8.5",
+      "cids:hasSpecification": {
+        "@id": "https://sdgs.un.org/goals/goal8"
+      },
+      "cids:hasDescription": "Alignment: conceptual (Common Framework 3.4.2)"
+    },
+    {
+      "@id": "https://example.org/maple-ridge/theme/T3",
+      "@type": "cids:Theme",
+      "cids:hasName": "Decent work and economic inclusion",
+      "cids:hasDescription": "Quality jobs and pathways into employment.",
+      "cids:hasCode": [
+        {
+          "@id": "https://example.org/maple-ridge/code/SDG-target-8-5"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/code/SDG-target-2-1",
+      "@type": "cids:Code",
+      "cids:hasName": "SDG target 2.1",
+      "cids:hasSpecification": {
+        "@id": "https://sdgs.un.org/goals/goal2"
+      },
+      "cids:hasDescription": "Alignment: conceptual (Common Framework 3.4.2)"
+    },
+    {
+      "@id": "https://example.org/maple-ridge/theme/T4",
+      "@type": "cids:Theme",
+      "cids:hasName": "Food security",
+      "cids:hasDescription": "Reliable access to nutritious food.",
+      "cids:hasCode": [
+        {
+          "@id": "https://example.org/maple-ridge/code/SDG-target-2-1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/stakeholder/S1",
+      "@type": "cids:Stakeholder",
+      "cids:hasName": "Planet",
+      "cids:hasDescription": "The natural environment and the climate system."
+    },
+    {
+      "@id": "https://example.org/maple-ridge/stakeholder/S2",
+      "@type": "cids:Stakeholder",
+      "cids:hasName": "Low-income renter households",
+      "cids:hasDescription": "Households paying below-market rent in portfolio-financed buildings."
+    },
+    {
+      "@id": "https://example.org/maple-ridge/stakeholder/S3",
+      "@type": "cids:Stakeholder",
+      "cids:hasName": "Workers at portfolio enterprises",
+      "cids:hasDescription": "People employed by portfolio organizations and their financed businesses."
+    },
+    {
+      "@id": "https://example.org/maple-ridge/stakeholder/S4",
+      "@type": "cids:Stakeholder",
+      "cids:hasName": "Job seekers facing employment barriers",
+      "cids:hasDescription": "Training participants facing barriers to employment."
+    },
+    {
+      "@id": "https://example.org/maple-ridge/stakeholder/S5",
+      "@type": "cids:Stakeholder",
+      "cids:hasName": "Indigenous community members",
+      "cids:hasDescription": "Community members enrolled in the weekly food box program."
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R001",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Clean electricity generated",
+      "cids:hasDescription": "Metered output from three community solar arrays.",
+      "cids:unitDescription": "MWh",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/CED"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/CED"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R001"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/CED-T1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R001",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Clean electricity generated (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R001"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/CED"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "4200",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "MWh"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "third-party verified"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R002",
+      "@type": "cids:Indicator",
+      "cids:hasName": "GHG emissions avoided",
+      "cids:hasDescription": "Calculated by the co-op from R001 using its own grid factor.",
+      "cids:unitDescription": "tCO2e",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/CED"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/CED"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R002"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/CED-T1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R002",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "GHG emissions avoided (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R002"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/CED"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "1260",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "tCO2e"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "third-party verified"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R003",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Projected clean electricity generation 2026",
+      "cids:hasDescription": "Includes a fourth array under construction.",
+      "cids:unitDescription": "MWh",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/CED"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/CED"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R003"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/CED-T1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R003",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Projected clean electricity generation 2026 (2026-01-01 to 2026-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R003"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/CED"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "5100",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "MWh"
+        }
+      },
+      "prov:startedAtTime": "2026-01-01T00:00:00",
+      "prov:endedAtTime": "2026-12-31T00:00:00",
+      "cids:hasComment": "forecast; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R004",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Member-owners of the co-operative",
+      "cids:hasDescription": "Governance metric.",
+      "cids:unitDescription": "members",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/CED"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/CED"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R004"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R004",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Member-owners of the co-operative (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R004"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/CED"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "610",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "members"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/stakeholderOutcome/CED-T1-S1",
+      "@type": "cids:StakeholderOutcome",
+      "cids:hasName": "Climate action: Planet",
+      "cids:hasDescription": "Importance assessed by: Intergovernmental Panel on Climate Change (IPCC) - importance assessed on behalf of the stakeholder",
+      "cids:forStakeholder": {
+        "@id": "https://example.org/maple-ridge/stakeholder/S1"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/CED-T1"
+      },
+      "cids:hasImportance": "high importance",
+      "cids:isUnderserved": false,
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R001"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R002"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R003"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/CED-T1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/impactReport/CED-T1",
+      "@type": "cids:ImpactReport",
+      "cids:hasName": "Cedar Solar Co-op: Climate action impact report 2025",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/CED"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/CED-T1"
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasReportedImpact": "positive"
+    },
+    {
+      "@id": "https://example.org/maple-ridge/outcome/CED-T1",
+      "@type": "cids:Outcome",
+      "cids:hasName": "Climate action - Cedar Solar Co-op",
+      "cids:hasDescription": "Reducing greenhouse gas emissions and increasing clean energy.",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/CED"
+      },
+      "cids:forTheme": [
+        {
+          "@id": "https://example.org/maple-ridge/theme/T1"
+        }
+      ],
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R001"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R002"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R003"
+        }
+      ],
+      "cids:hasStakeholderOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/stakeholderOutcome/CED-T1-S1"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/CED-T1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/organization/CED",
+      "@type": "cids:Organization",
+      "cids:hasName": "Cedar Solar Co-op",
+      "org:hasLegalName": "Cedar Solar Energy Co-operative Inc. (fictional)",
+      "cids:hasDescription": "Co-operative; Clean energy; NS",
+      "cids:hasOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/CED-T1"
+        }
+      ],
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R001"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R002"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R003"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R004"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R005",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Households living in below-market rental units",
+      "cids:hasDescription": "Fiscal year ends March 31.",
+      "cids:unitDescription": "households",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/HHS"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/HHS"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R005"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/HHS-T2"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R005",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Households living in below-market rental units (2024-04-01 to 2025-03-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R005"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/HHS"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "340",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "households"
+        }
+      },
+      "prov:startedAtTime": "2024-04-01T00:00:00",
+      "prov:endedAtTime": "2025-03-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R006",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Average rent as a percentage of market rent",
+      "cids:hasDescription": "No market-rent comparison data supplied.",
+      "cids:unitDescription": "percent",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/HHS"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/HHS"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R006"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/HHS-T2"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R006",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Average rent as a percentage of market rent (2024-04-01 to 2025-03-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R006"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/HHS"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "72",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "percent"
+        }
+      },
+      "prov:startedAtTime": "2024-04-01T00:00:00",
+      "prov:endedAtTime": "2025-03-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R007",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Construction jobs supported (new building)",
+      "cids:hasDescription": "Temporary trades roles during construction.",
+      "cids:unitDescription": "jobs",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/HHS"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/HHS"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R007"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/HHS-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R007",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Construction jobs supported (new building) (2024-04-01 to 2025-03-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R007"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/HHS"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "45",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "jobs"
+        }
+      },
+      "prov:startedAtTime": "2024-04-01T00:00:00",
+      "prov:endedAtTime": "2025-03-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/stakeholderOutcome/HHS-T2-S2",
+      "@type": "cids:StakeholderOutcome",
+      "cids:hasName": "Affordable housing: Low-income renter households",
+      "cids:hasDescription": "Importance assessed by: Tenant survey (fictional)",
+      "cids:forStakeholder": {
+        "@id": "https://example.org/maple-ridge/stakeholder/S2"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/HHS-T2"
+      },
+      "cids:hasImportance": "high importance",
+      "cids:isUnderserved": true,
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R005"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R006"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/HHS-T2"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/impactReport/HHS-T2",
+      "@type": "cids:ImpactReport",
+      "cids:hasName": "Harbourview Housing Society: Affordable housing impact report 2025",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/HHS"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/HHS-T2"
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasReportedImpact": "positive"
+    },
+    {
+      "@id": "https://example.org/maple-ridge/outcome/HHS-T2",
+      "@type": "cids:Outcome",
+      "cids:hasName": "Affordable housing - Harbourview Housing Society",
+      "cids:hasDescription": "People living in housing they can afford.",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/HHS"
+      },
+      "cids:forTheme": [
+        {
+          "@id": "https://example.org/maple-ridge/theme/T2"
+        }
+      ],
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R005"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R006"
+        }
+      ],
+      "cids:hasStakeholderOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/stakeholderOutcome/HHS-T2-S2"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/HHS-T2"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/stakeholderOutcome/HHS-T3-S3",
+      "@type": "cids:StakeholderOutcome",
+      "cids:hasName": "Decent work and economic inclusion: Workers at portfolio enterprises",
+      "cids:hasDescription": "Importance assessed by: Portfolio organization (estimated on behalf of the stakeholder)",
+      "cids:forStakeholder": {
+        "@id": "https://example.org/maple-ridge/stakeholder/S3"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/HHS-T3"
+      },
+      "cids:hasImportance": "high importance",
+      "cids:isUnderserved": false,
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R007"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/HHS-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/impactReport/HHS-T3",
+      "@type": "cids:ImpactReport",
+      "cids:hasName": "Harbourview Housing Society: Decent work and economic inclusion impact report 2025",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/HHS"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/HHS-T3"
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasReportedImpact": "positive"
+    },
+    {
+      "@id": "https://example.org/maple-ridge/outcome/HHS-T3",
+      "@type": "cids:Outcome",
+      "cids:hasName": "Decent work and economic inclusion - Harbourview Housing Society",
+      "cids:hasDescription": "Quality jobs and pathways into employment.",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/HHS"
+      },
+      "cids:forTheme": [
+        {
+          "@id": "https://example.org/maple-ridge/theme/T3"
+        }
+      ],
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R007"
+        }
+      ],
+      "cids:hasStakeholderOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/stakeholderOutcome/HHS-T3-S3"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/HHS-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/organization/HHS",
+      "@type": "cids:Organization",
+      "cids:hasName": "Harbourview Housing Society",
+      "org:hasLegalName": "Harbourview Non-Profit Housing Society (fictional)",
+      "cids:hasDescription": "Non-profit; Affordable housing; BC",
+      "cids:hasOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/HHS-T2"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/outcome/HHS-T3"
+        }
+      ],
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R005"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R006"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R007"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R008",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Homes retrofitted (Q1)",
+      "cids:hasDescription": "Quarterly report.",
+      "cids:unitDescription": "homes",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/RRS"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/RRS"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R008"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/RRS-T1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R008",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Homes retrofitted (Q1) (2025-01-01 to 2025-03-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R008"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/RRS"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "38",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "homes"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-03-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R009",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Homes retrofitted (Q2)",
+      "cids:hasDescription": "Quarterly report.",
+      "cids:unitDescription": "homes",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/RRS"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/RRS"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R009"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/RRS-T1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R009",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Homes retrofitted (Q2) (2025-04-01 to 2025-06-30)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R009"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/RRS"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "46",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "homes"
+        }
+      },
+      "prov:startedAtTime": "2025-04-01T00:00:00",
+      "prov:endedAtTime": "2025-06-30T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R010",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Homes retrofitted (Q3)",
+      "cids:hasDescription": "Quarterly report. Q4 report not yet received.",
+      "cids:unitDescription": "homes",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/RRS"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/RRS"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R010"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/RRS-T1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R010",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Homes retrofitted (Q3) (2025-07-01 to 2025-09-30)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R010"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/RRS"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "51",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "homes"
+        }
+      },
+      "prov:startedAtTime": "2025-07-01T00:00:00",
+      "prov:endedAtTime": "2025-09-30T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R011",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Average annual energy saved per retrofitted home",
+      "cids:hasDescription": "Modelled savings from pre/post energy audits.",
+      "cids:unitDescription": "MWh per home",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/RRS"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/RRS"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R011"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/RRS-T1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R011",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Average annual energy saved per retrofitted home (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R011"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/RRS"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "9500",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "MWh per home"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/stakeholderOutcome/RRS-T1-S1",
+      "@type": "cids:StakeholderOutcome",
+      "cids:hasName": "Climate action: Planet",
+      "cids:hasDescription": "Importance assessed by: Intergovernmental Panel on Climate Change (IPCC) - importance assessed on behalf of the stakeholder",
+      "cids:forStakeholder": {
+        "@id": "https://example.org/maple-ridge/stakeholder/S1"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/RRS-T1"
+      },
+      "cids:hasImportance": "high importance",
+      "cids:isUnderserved": false,
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R008"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R009"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R010"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R011"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/RRS-T1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/impactRisk/RRS-T1",
+      "@type": [
+        "cids:ImpactRisk",
+        "cids:EvidenceRisk"
+      ],
+      "cids:hasDescription": "Energy savings are modelled from pre/post audits, not metered, and Q4 data is missing.",
+      "cids:hasLikelihood": "medium",
+      "cids:hasConsequence": "moderate",
+      "cids:hasMitigation": "Request metered utility data for a sample of homes and the Q4 report.",
+      "cids:forImpactReport": {
+        "@id": "https://example.org/maple-ridge/impactReport/RRS-T1"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/impactReport/RRS-T1",
+      "@type": "cids:ImpactReport",
+      "cids:hasName": "Riverbend Retrofit Social Enterprise: Climate action impact report 2025",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/RRS"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/RRS-T1"
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasReportedImpact": "positive",
+      "cids:hasImpactRisk": [
+        {
+          "@id": "https://example.org/maple-ridge/impactRisk/RRS-T1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/outcome/RRS-T1",
+      "@type": "cids:Outcome",
+      "cids:hasName": "Climate action - Riverbend Retrofit Social Enterprise",
+      "cids:hasDescription": "Reducing greenhouse gas emissions and increasing clean energy.",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/RRS"
+      },
+      "cids:forTheme": [
+        {
+          "@id": "https://example.org/maple-ridge/theme/T1"
+        }
+      ],
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R008"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R009"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R010"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R011"
+        }
+      ],
+      "cids:hasStakeholderOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/stakeholderOutcome/RRS-T1-S1"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/RRS-T1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/organization/RRS",
+      "@type": "cids:Organization",
+      "cids:hasName": "Riverbend Retrofit Social Enterprise",
+      "org:hasLegalName": "Riverbend Retrofit Services Ltd. (fictional)",
+      "cids:hasDescription": "Social enterprise; Building energy efficiency; AB",
+      "cids:hasOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/RRS-T1"
+        }
+      ],
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R008"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R009"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R010"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R011"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R012",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Full-time jobs created",
+      "cids:hasDescription": "Permanent roles.",
+      "cids:unitDescription": "jobs",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R012"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/NTS-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R012",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Full-time jobs created (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R012"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "14",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "jobs"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R013",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Part-time jobs created",
+      "cids:hasDescription": "Permanent part-time roles.",
+      "cids:unitDescription": "jobs",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R013"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/NTS-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R013",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Part-time jobs created (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R013"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "9",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "jobs"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R014",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Community members receiving weekly food boxes",
+      "cids:hasDescription": "Unique individuals from the enrolment list.",
+      "cids:unitDescription": "people",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R014"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/NTS-T4"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R014",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Community members receiving weekly food boxes (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R014"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "1150",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "people"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R015",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Community feasts and events hosted",
+      "cids:hasDescription": "Attendance not tracked.",
+      "cids:unitDescription": "events",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R015"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/NTS-T4"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R015",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Community feasts and events hosted (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R015"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "22",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "events"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R016",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Households receiving one-time emergency food hampers",
+      "cids:hasDescription": "Winter emergency response.",
+      "cids:unitDescription": "households",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R016"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/NTS-T4"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R016",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Households receiving one-time emergency food hampers (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R016"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "180",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "households"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/stakeholderOutcome/NTS-T3-S3",
+      "@type": "cids:StakeholderOutcome",
+      "cids:hasName": "Decent work and economic inclusion: Workers at portfolio enterprises",
+      "cids:hasDescription": "Importance assessed by: Portfolio organization (estimated on behalf of the stakeholder)",
+      "cids:forStakeholder": {
+        "@id": "https://example.org/maple-ridge/stakeholder/S3"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/NTS-T3"
+      },
+      "cids:hasImportance": "high importance",
+      "cids:isUnderserved": false,
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R012"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R013"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/NTS-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/impactReport/NTS-T3",
+      "@type": "cids:ImpactReport",
+      "cids:hasName": "Northern Table Social Enterprise: Decent work and economic inclusion impact report 2025",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/NTS-T3"
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasReportedImpact": "positive"
+    },
+    {
+      "@id": "https://example.org/maple-ridge/outcome/NTS-T3",
+      "@type": "cids:Outcome",
+      "cids:hasName": "Decent work and economic inclusion - Northern Table Social Enterprise",
+      "cids:hasDescription": "Quality jobs and pathways into employment.",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "cids:forTheme": [
+        {
+          "@id": "https://example.org/maple-ridge/theme/T3"
+        }
+      ],
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R012"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R013"
+        }
+      ],
+      "cids:hasStakeholderOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/stakeholderOutcome/NTS-T3-S3"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/NTS-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/stakeholderOutcome/NTS-T4-S5",
+      "@type": "cids:StakeholderOutcome",
+      "cids:hasName": "Food security: Indigenous community members",
+      "cids:hasDescription": "Importance assessed by: Community advisory circle (fictional)",
+      "cids:forStakeholder": {
+        "@id": "https://example.org/maple-ridge/stakeholder/S5"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/NTS-T4"
+      },
+      "cids:hasImportance": "high importance",
+      "cids:isUnderserved": true,
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R014"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R015"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R016"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/NTS-T4"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/impactRisk/NTS-T4",
+      "@type": [
+        "cids:ImpactRisk",
+        "cids:StakeholderParticipationRisk"
+      ],
+      "cids:hasDescription": "Program design could drift from community priorities if feedback loops weaken.",
+      "cids:hasLikelihood": "low",
+      "cids:hasConsequence": "moderate",
+      "cids:hasMitigation": "Continue quarterly community advisory circle and report importance ratings.",
+      "cids:forImpactReport": {
+        "@id": "https://example.org/maple-ridge/impactReport/NTS-T4"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/impactReport/NTS-T4",
+      "@type": "cids:ImpactReport",
+      "cids:hasName": "Northern Table Social Enterprise: Food security impact report 2025",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/NTS-T4"
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasReportedImpact": "positive",
+      "cids:hasImpactRisk": [
+        {
+          "@id": "https://example.org/maple-ridge/impactRisk/NTS-T4"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/outcome/NTS-T4",
+      "@type": "cids:Outcome",
+      "cids:hasName": "Food security - Northern Table Social Enterprise",
+      "cids:hasDescription": "Reliable access to nutritious food.",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/NTS"
+      },
+      "cids:forTheme": [
+        {
+          "@id": "https://example.org/maple-ridge/theme/T4"
+        }
+      ],
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R014"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R015"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R016"
+        }
+      ],
+      "cids:hasStakeholderOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/stakeholderOutcome/NTS-T4-S5"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/NTS-T4"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/organization/NTS",
+      "@type": "cids:Organization",
+      "cids:hasName": "Northern Table Social Enterprise",
+      "org:hasLegalName": "Northern Table Foods LP (fictional)",
+      "cids:hasDescription": "Indigenous-led social enterprise; Food systems; MB",
+      "cids:hasOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/NTS-T3"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/outcome/NTS-T4"
+        }
+      ],
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R012"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R013"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R014"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R015"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R016"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R017",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Jobs sustained across fund portfolio (fund total)",
+      "cids:hasDescription": "Fund-level roll-up reported by the intermediary.",
+      "cids:unitDescription": "jobs",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/GCL"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/GCL"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R017"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/GCL-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R017",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Jobs sustained across fund portfolio (fund total) (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R017"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/GCL"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "410",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "jobs"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: fund total",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R018",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Jobs sustained at financed businesses (investee-level detail)",
+      "cids:hasDescription": "Sum of investee-level file for 62 businesses. Includes Northern Table Social Enterprise.",
+      "cids:unitDescription": "jobs",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/GCL"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/GCL"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R018"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/GCL-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R018",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Jobs sustained at financed businesses (investee-level detail) (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R018"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/GCL"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "404",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "jobs"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/stakeholderOutcome/GCL-T3-S3",
+      "@type": "cids:StakeholderOutcome",
+      "cids:hasName": "Decent work and economic inclusion: Workers at portfolio enterprises",
+      "cids:hasDescription": "Importance assessed by: Portfolio organization (estimated on behalf of the stakeholder)",
+      "cids:forStakeholder": {
+        "@id": "https://example.org/maple-ridge/stakeholder/S3"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/GCL-T3"
+      },
+      "cids:hasImportance": "high importance",
+      "cids:isUnderserved": false,
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R017"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R018"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/GCL-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/impactReport/GCL-T3",
+      "@type": "cids:ImpactReport",
+      "cids:hasName": "Greenway Community Loan Fund: Decent work and economic inclusion impact report 2025",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/GCL"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/GCL-T3"
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasReportedImpact": "positive"
+    },
+    {
+      "@id": "https://example.org/maple-ridge/outcome/GCL-T3",
+      "@type": "cids:Outcome",
+      "cids:hasName": "Decent work and economic inclusion - Greenway Community Loan Fund",
+      "cids:hasDescription": "Quality jobs and pathways into employment.",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/GCL"
+      },
+      "cids:forTheme": [
+        {
+          "@id": "https://example.org/maple-ridge/theme/T3"
+        }
+      ],
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R017"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R018"
+        }
+      ],
+      "cids:hasStakeholderOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/stakeholderOutcome/GCL-T3-S3"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/GCL-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/organization/GCL",
+      "@type": "cids:Organization",
+      "cids:hasName": "Greenway Community Loan Fund",
+      "org:hasLegalName": "Greenway Community Loan Fund LP (fictional)",
+      "cids:hasDescription": "Intermediary fund; Small business lending; ON",
+      "cids:hasOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/GCL-T3"
+        }
+      ],
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R017"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R018"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R019",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Participants completing employment training",
+      "cids:hasDescription": "Unique completers.",
+      "cids:unitDescription": "people",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/LLC"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/LLC"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R019"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/LLC-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R019",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Participants completing employment training (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R019"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/LLC"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "260",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "people"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R020",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Completers employed within six months",
+      "cids:hasDescription": "Follow-up survey verified by an external evaluator.",
+      "cids:unitDescription": "percent",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/LLC"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/LLC"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R020"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/LLC-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R020",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Completers employed within six months (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R020"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/LLC"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "58",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "percent"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "third-party verified"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R021",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Training hours delivered",
+      "cids:hasDescription": "Classroom and work-placement hours.",
+      "cids:unitDescription": "hours",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/LLC"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/LLC"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R021"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/LLC-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R021",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Training hours delivered (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R021"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/LLC"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "15600",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "hours"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/R022",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Participants who self-identify as Indigenous",
+      "cids:hasDescription": "Voluntary self-identification at intake.",
+      "cids:unitDescription": "percent",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/LLC"
+      },
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/LLC"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/R022"
+        }
+      ],
+      "cids:forOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/LLC-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/R022",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Participants who self-identify as Indigenous (2025-01-01 to 2025-12-31)",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/R022"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/LLC"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "41",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "percent"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "actual; reporting layer: investee",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "self-reported"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/stakeholderOutcome/LLC-T3-S4",
+      "@type": "cids:StakeholderOutcome",
+      "cids:hasName": "Decent work and economic inclusion: Job seekers facing employment barriers",
+      "cids:hasDescription": "Importance assessed by: Participant feedback sessions (fictional)",
+      "cids:forStakeholder": {
+        "@id": "https://example.org/maple-ridge/stakeholder/S4"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/LLC-T3"
+      },
+      "cids:hasImportance": "high importance",
+      "cids:isUnderserved": true,
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R019"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R020"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R021"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R022"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/LLC-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/impactRisk/LLC-T3",
+      "@type": [
+        "cids:ImpactRisk",
+        "cids:DropOffRisk"
+      ],
+      "cids:hasDescription": "Employment outcomes may not persist beyond the six-month follow-up.",
+      "cids:hasLikelihood": "medium",
+      "cids:hasConsequence": "moderate",
+      "cids:hasMitigation": "Add a 12-month follow-up survey.",
+      "cids:forImpactReport": {
+        "@id": "https://example.org/maple-ridge/impactReport/LLC-T3"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/impactReport/LLC-T3",
+      "@type": "cids:ImpactReport",
+      "cids:hasName": "Lakeshore Learning Collective: Decent work and economic inclusion impact report 2025",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/LLC"
+      },
+      "cids:forOutcome": {
+        "@id": "https://example.org/maple-ridge/outcome/LLC-T3"
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasReportedImpact": "positive",
+      "cids:hasImpactRisk": [
+        {
+          "@id": "https://example.org/maple-ridge/impactRisk/LLC-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/outcome/LLC-T3",
+      "@type": "cids:Outcome",
+      "cids:hasName": "Decent work and economic inclusion - Lakeshore Learning Collective",
+      "cids:hasDescription": "Quality jobs and pathways into employment.",
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/LLC"
+      },
+      "cids:forTheme": [
+        {
+          "@id": "https://example.org/maple-ridge/theme/T3"
+        }
+      ],
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R019"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R020"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R021"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R022"
+        }
+      ],
+      "cids:hasStakeholderOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/stakeholderOutcome/LLC-T3-S4"
+        }
+      ],
+      "cids:hasImpactReport": [
+        {
+          "@id": "https://example.org/maple-ridge/impactReport/LLC-T3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/organization/LLC",
+      "@type": "cids:Organization",
+      "cids:hasName": "Lakeshore Learning Collective",
+      "org:hasLegalName": "Lakeshore Learning Collective (fictional)",
+      "cids:hasDescription": "Non-profit; Workforce development; ON",
+      "cids:hasOutcome": [
+        {
+          "@id": "https://example.org/maple-ridge/outcome/LLC-T3"
+        }
+      ],
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R019"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R020"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R021"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/R022"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/target/H1",
+      "@type": "cids:Target",
+      "cids:hasName": "2025 target: tCO2e of greenhouse gas emissions avoided",
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "1700",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "tCO2e"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:forIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/H1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/H1",
+      "@type": "cids:Indicator",
+      "cids:hasName": "tCO2e of greenhouse gas emissions avoided",
+      "cids:hasDescription": "Emissions avoided through clean energy generation and building energy savings in the reporting period. Boundaries: Calendar 2025 or most recent 12-month period ending in 2025; actuals only; forecasts excluded; MWh not converted to tCO2e where the organization already reports tCO2e for the same activity.",
+      "cids:unitDescription": "tCO2e",
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:hasTarget": {
+        "@id": "https://example.org/maple-ridge/target/H1"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/H1"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/H1",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "tCO2e of greenhouse gas emissions avoided - portfolio total 2025",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/H1"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:forTarget": {
+        "@id": "https://example.org/maple-ridge/target/H1"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "1837.1",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "tCO2e"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "Aggregated with the Common Framework v1.0 from 2 metrics across 2 organizations; overlap deduction 0. See outputs/audit_trail.csv.",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "Internal QA record: outputs/qa_checks.csv"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/target/H2",
+      "@type": "cids:Target",
+      "cids:hasName": "2025 target: MWh of clean energy generated or saved",
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "5800",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "MWh"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:forIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/H2"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/H2",
+      "@type": "cids:Indicator",
+      "cids:hasName": "MWh of clean energy generated or saved",
+      "cids:hasDescription": "Clean electricity generated plus energy saved through retrofits. Boundaries: Same time boundary as H1; actuals only.",
+      "cids:unitDescription": "MWh",
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:hasTarget": {
+        "@id": "https://example.org/maple-ridge/target/H2"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/H2"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/H2",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "MWh of clean energy generated or saved - portfolio total 2025",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/H2"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:forTarget": {
+        "@id": "https://example.org/maple-ridge/target/H2"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "5482.5",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "MWh"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "Aggregated with the Common Framework v1.0 from 2 metrics across 2 organizations; overlap deduction 0. See outputs/audit_trail.csv.",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "Internal QA record: outputs/qa_checks.csv"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/target/H3",
+      "@type": "cids:Target",
+      "cids:hasName": "2025 target: People living in affordable housing",
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "850",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "people"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:forIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/H3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/H3",
+      "@type": "cids:Indicator",
+      "cids:hasName": "People living in affordable housing",
+      "cids:hasDescription": "People living in below-market rental units financed by the portfolio. Boundaries: Most recent 12-month period ending in 2025; households converted to people using a documented proxy.",
+      "cids:unitDescription": "people",
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:hasTarget": {
+        "@id": "https://example.org/maple-ridge/target/H3"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/H3"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/H3",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "People living in affordable housing - portfolio total 2025",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/H3"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:forTarget": {
+        "@id": "https://example.org/maple-ridge/target/H3"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "816",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "people"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "Aggregated with the Common Framework v1.0 from 1 metrics across 1 organizations; overlap deduction 0. See outputs/audit_trail.csv.",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "Internal QA record: outputs/qa_checks.csv"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/target/H4",
+      "@type": "cids:Target",
+      "cids:hasName": "2025 target: Jobs created or sustained",
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "450",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "jobs"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:forIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/H4"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/H4",
+      "@type": "cids:Indicator",
+      "cids:hasName": "Jobs created or sustained",
+      "cids:hasDescription": "Ongoing full-time and part-time jobs at portfolio organizations and their financed businesses. Boundaries: Includes permanent full-time and part-time roles; excludes temporary construction roles and volunteer hours; investee-level data preferred over fund totals; cross-holdings deducted.",
+      "cids:unitDescription": "jobs",
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:hasTarget": {
+        "@id": "https://example.org/maple-ridge/target/H4"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/H4"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/H4",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "Jobs created or sustained - portfolio total 2025",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/H4"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:forTarget": {
+        "@id": "https://example.org/maple-ridge/target/H4"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "404",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "jobs"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "Aggregated with the Common Framework v1.0 from 3 metrics across 2 organizations; overlap deduction 23. See outputs/audit_trail.csv.",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "Internal QA record: outputs/qa_checks.csv"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/target/H5",
+      "@type": "cids:Target",
+      "cids:hasName": "2025 target: People who gained employment after training",
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "160",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "people"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:forIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/H5"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/H5",
+      "@type": "cids:Indicator",
+      "cids:hasName": "People who gained employment after training",
+      "cids:hasDescription": "Training completers employed within six months. Boundaries: Outcome-level only; activity metrics such as training hours excluded; rounded down to whole people.",
+      "cids:unitDescription": "people",
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:hasTarget": {
+        "@id": "https://example.org/maple-ridge/target/H5"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/H5"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/H5",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "People who gained employment after training - portfolio total 2025",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/H5"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:forTarget": {
+        "@id": "https://example.org/maple-ridge/target/H5"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "150",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "people"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "Aggregated with the Common Framework v1.0 from 1 metrics across 1 organizations; overlap deduction 0. See outputs/audit_trail.csv.",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "Internal QA record: outputs/qa_checks.csv"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/target/H6",
+      "@type": "cids:Target",
+      "cids:hasName": "2025 target: People with recurring access to nutritious food",
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "1200",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "people"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:forIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/H6"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicator/H6",
+      "@type": "cids:Indicator",
+      "cids:hasName": "People with recurring access to nutritious food",
+      "cids:hasDescription": "Unique people receiving recurring food support. Boundaries: Excludes one-time emergency support and event attendance.",
+      "cids:unitDescription": "people",
+      "cids:definedBy": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:hasTarget": {
+        "@id": "https://example.org/maple-ridge/target/H6"
+      },
+      "cids:hasIndicatorReport": [
+        {
+          "@id": "https://example.org/maple-ridge/indicatorReport/H6"
+        }
+      ]
+    },
+    {
+      "@id": "https://example.org/maple-ridge/indicatorReport/H6",
+      "@type": "cids:IndicatorReport",
+      "cids:hasName": "People with recurring access to nutritious food - portfolio total 2025",
+      "cids:forIndicator": {
+        "@id": "https://example.org/maple-ridge/indicator/H6"
+      },
+      "cids:forOrganization": {
+        "@id": "https://example.org/maple-ridge/organization/portfolio"
+      },
+      "cids:forTarget": {
+        "@id": "https://example.org/maple-ridge/target/H6"
+      },
+      "i72:value": {
+        "@type": "i72:Measure",
+        "i72:numerical_value": "1150",
+        "i72:unit_of_measure": {
+          "@type": "i72:Unit_of_measure",
+          "rdfs:label": "people"
+        }
+      },
+      "prov:startedAtTime": "2025-01-01T00:00:00",
+      "prov:endedAtTime": "2025-12-31T00:00:00",
+      "cids:hasComment": "Aggregated with the Common Framework v1.0 from 1 metrics across 1 organizations; overlap deduction 0. See outputs/audit_trail.csv.",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityAnnotation",
+        "rdfs:comment": "Internal QA record: outputs/qa_checks.csv"
+      }
+    },
+    {
+      "@id": "https://example.org/maple-ridge/organization/portfolio",
+      "@type": "cids:Organization",
+      "cids:hasName": "Maple Ridge Impact Portfolio (fictional)",
+      "org:hasLegalName": "Maple Ridge Impact Portfolio (fictional)",
+      "cids:hasDescription": "Fictional portfolio aggregator used for this demonstration.",
+      "cids:hasIndicator": [
+        {
+          "@id": "https://example.org/maple-ridge/indicator/H1"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/H2"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/H3"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/H4"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/H5"
+        },
+        {
+          "@id": "https://example.org/maple-ridge/indicator/H6"
+        }
+      ]
+    }
+  ]
+}

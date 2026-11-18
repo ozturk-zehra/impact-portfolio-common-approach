@@ -1,0 +1,11 @@
+headline_id,holding_id,organization,net_value,ownership_share,investor_share_value
+H2,CED,Cedar Solar Co-op,4200.0,0.1111111111111111,466.7
+H1,CED,Cedar Solar Co-op,1260.0,0.1111111111111111,140.0
+H3,HHS,Harbourview Housing Society,816.0,0.08333333333333333,68.0
+H2,RRS,Riverbend Retrofit Social Enterprise,1282.5,0.125,160.3
+H1,RRS,Riverbend Retrofit Social Enterprise,577.1,0.125,72.1
+H4,NTS,Northern Table Social Enterprise,14.0,0.125,1.8
+H4,NTS,Northern Table Social Enterprise,9.0,0.125,1.1
+H6,NTS,Northern Table Social Enterprise,1150.0,0.125,143.8
+H4,GCL,Greenway Community Loan Fund,381.0,0.125,47.6
+H5,LLC,Lakeshore Learning Collective,150.0,0.125,18.8

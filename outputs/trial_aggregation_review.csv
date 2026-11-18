@@ -1,0 +1,7 @@
+headline_id,headline_indicator,common_unit,portfolio_total,prior_year_value,trial_ratio_to_prior,trial_flag
+H1,tCO2e of greenhouse gas emissions avoided,tCO2e,578385.0,1350,428.43,ANOMALY: investigate before finalizing
+H2,MWh of clean energy generated or saved,MWh,1286700.0,4900,262.59,ANOMALY: investigate before finalizing
+H3,People living in affordable housing,people,816.0,700,1.17,ok
+H4,Jobs created or sustained,jobs,404.0,380,1.06,ok
+H5,People who gained employment after training,people,150.0,140,1.07,ok
+H6,People with recurring access to nutritious food,people,1150.0,1000,1.15,ok

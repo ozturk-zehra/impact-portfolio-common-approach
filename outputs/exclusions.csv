@@ -1,0 +1,14 @@
+report_id,holding_id,metric_as_reported,value,unit_as_reported,theme_id,exclusion_code,exclusion_rationale
+R003,CED,Projected clean electricity generation 2026,5100,MWh,T1,OUT_OF_WINDOW,Forecast for 2026 falls outside the 2025 reporting window and is not an actual result.
+R004,CED,Member-owners of the co-operative,610,members,,IMMATERIAL,Governance metric that does not measure any portfolio theme. Reported narratively.
+R006,HHS,Average rent as a percentage of market rent,72,percent,T2,RATIO_NO_COUNTS,Ratio reported without a numerator or denominator. Kept as context and not aggregated.
+R007,HHS,Construction jobs supported (new building),45,jobs,T3,BOUNDARY,Temporary construction roles fall outside the H4 boundary (ongoing jobs only).
+R008,RRS,Homes retrofitted (Q1),38,homes,T1,INPUT_TO_DERIVED,Used as an input to the derived energy-saved value (R011). Not aggregated on its own.
+R009,RRS,Homes retrofitted (Q2),46,homes,T1,INPUT_TO_DERIVED,Used as an input to the derived energy-saved value (R011). Not aggregated on its own.
+R010,RRS,Homes retrofitted (Q3),51,homes,T1,INPUT_TO_DERIVED,Used as an input to the derived energy-saved value (R011). Not aggregated on its own.
+R015,NTS,Community feasts and events hosted,22,events,T4,NON_CONVERTIBLE,Events cannot be converted to people without attendance data.
+R016,NTS,Households receiving one-time emergency food hampers,180,households,T4,BOUNDARY,One-time emergency support falls outside the H6 boundary (recurring access only).
+R017,GCL,Jobs sustained across fund portfolio (fund total),410,jobs,T3,FUND_LAYER,Intermediary fund total. Investee-level data (R018) is used instead to avoid double-counting across reporting layers.
+R019,LLC,Participants completing employment training,260,people,T3,INPUT_TO_DERIVED,Used as the denominator for the derived employment outcome (R020). Not aggregated on its own.
+R021,LLC,Training hours delivered,15600,hours,T3,ACTIVITY_DUPLICATE,Activity-level metric describing the same program as the outcome metric (R020). The outcome-level metric is retained.
+R022,LLC,Participants who self-identify as Indigenous,41,percent,T3,CONTEXTUAL,Stakeholder characteristic. Reported as context (CIDS CharacteristicReport) and not aggregated.

@@ -1,0 +1,2 @@
+report_id,field,original_value,original_unit,corrected_value,corrected_unit,reason,confirmed_with,confirmed_on
+R011,value,9500,MWh per home,9.5,MWh per home,"Trial aggregation flagged H2 at more than 250x the prior year. The investee confirmed the figure was 9,500 kWh per home, not MWh. Converted with F3 (kWh to MWh).",Investee finance lead (simulated),2026-02-12

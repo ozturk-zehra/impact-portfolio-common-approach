@@ -1,0 +1,7 @@
+holding_id,organization,legal_name,organization_type,asset_class,sector,province,investment_outstanding_cad,enterprise_value_cad,value_basis
+CED,Cedar Solar Co-op,Cedar Solar Energy Co-operative Inc. (fictional),Co-operative,Private debt,Clean energy,NS,2000000,18000000,Enterprise value (debt + equity)
+HHS,Harbourview Housing Society,Harbourview Non-Profit Housing Society (fictional),Non-profit,Community bond,Affordable housing,BC,3500000,42000000,Total capitalization
+RRS,Riverbend Retrofit Social Enterprise,Riverbend Retrofit Services Ltd. (fictional),Social enterprise,Private debt,Building energy efficiency,AB,750000,6000000,Enterprise value (debt + equity)
+NTS,Northern Table Social Enterprise,Northern Table Foods LP (fictional),Indigenous-led social enterprise,Private equity,Food systems,MB,500000,4000000,Enterprise value (post-money)
+GCL,Greenway Community Loan Fund,Greenway Community Loan Fund LP (fictional),Intermediary fund,Fund LP interest,Small business lending,ON,1500000,12000000,Fund NAV
+LLC,Lakeshore Learning Collective,Lakeshore Learning Collective (fictional),Non-profit,Community bond,Workforce development,ON,400000,3200000,Total capitalization

@@ -1,0 +1,5 @@
+theme_id,theme,description,inclusion_criteria,external_reference,alignment_degree
+T1,Climate action,Reducing greenhouse gas emissions and increasing clean energy.,Metric measures energy generated or saved from low-carbon sources or GHG emissions avoided or reduced.,SDG 7 (Affordable and clean energy); SDG 13 (Climate action),Conceptual
+T2,Affordable housing,People living in housing they can afford.,Metric counts people or households housed in below-market or supportive units during the period.,SDG target 11.1 (Access to adequate safe and affordable housing),Conceptual
+T3,Decent work and economic inclusion,Quality jobs and pathways into employment.,Metric counts ongoing jobs created or sustained or people moving into employment.,SDG target 8.5 (Full and productive employment and decent work),Conceptual
+T4,Food security,Reliable access to nutritious food.,Metric counts people with recurring access to nutritious food (not one-time emergency support).,SDG target 2.1 (Access to safe nutritious and sufficient food),Conceptual

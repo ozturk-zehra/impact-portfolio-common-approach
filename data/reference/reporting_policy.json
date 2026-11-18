@@ -1,0 +1,10 @@
+{
+  "portfolio_name": "Maple Ridge Impact Portfolio (fictional)",
+  "reporting_period_start": "2025-01-01",
+  "reporting_period_end": "2025-12-31",
+  "time_boundary_rule": "Include actual results for the calendar year or the most recent 12-month period ending within the reporting year. Exclude forecasts. Do not annualize partial periods.",
+  "reasonableness_threshold": 0.5,
+  "trial_anomaly_ratio": 3.0,
+  "methodology_version": "1.0",
+  "calculated_on": "2026-02-15"
+}

@@ -1,0 +1,14 @@
+area,check,status,detail
+Completeness,Every reported metric is linked to a headline or logged as excluded,pass,22 of 22 metrics accounted for
+Inclusion/exclusion integrity,Excluded metrics do not appear in any total,pass,No leakage
+Inclusion/exclusion integrity,Fund-level totals are not counted alongside investee-level data,pass,Investee layer used for the intermediary fund
+Double counting,Documented overlap deductions are applied,pass,A1: -23 H4
+Internal consistency,Each headline uses a single common unit,pass,No mixed units
+Boundaries,Only data within the reporting window is aggregated,pass,Window 2025-01-01 to 2025-12-31
+Assumptions,People counts are whole numbers (conservative rounding),pass,Rounded down
+Reconciliation,Intermediary fund total reconciles to investee-level detail,warn,Fund total exceeds investee detail by 6 jobs. Request explanation (possible mid-year exits).
+Coverage,Quarterly reporters have complete coverage of the period,warn,Riverbend submitted 3 of 4 quarters. Not annualized. H1/H2 understate full-year results.
+Conversion logic,Proxy factors are sourced and documented,warn,Placeholder factor(s) in use: ['F2']. Replace before external use.
+Trial aggregation,Anomalies from the trial run are resolved before finalizing,pass,"Trial flagged H1, H2; traced to and resolved by documented correction(s) R011"
+External reasonableness,Results within +/-50% of prior year,pass,All within range
+Peer replication,Totals recomputed independently from the audit trail match,pass,Independent groupby matches final totals

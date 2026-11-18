@@ -1,0 +1,24 @@
+report_id,theme_id,headline_id,pathway_stage,stakeholder_id,harmonization_type,factor_id,derivation,derive_inputs,confidence,exclusion_code,exclusion_rationale,analyst_note
+R001,T1,H2,Output,S1,Direct equivalence,,,,High,,,"Reported in MWh. Not converted to tCO2e because the co-op already reports tCO2e for the same activity (R002), which would double-count."
+R002,T1,H1,Outcome,S1,Direct equivalence,,,,High,,,Organization-calculated value accepted; implied factor recorded for reasonableness review.
+R003,T1,,Output,S1,,,,,High,OUT_OF_WINDOW,Forecast for 2026 falls outside the 2025 reporting window and is not an actual result.,
+R004,,,,,,,,,High,IMMATERIAL,Governance metric that does not measure any portfolio theme. Reported narratively.,
+R005,T2,H3,Outcome,S2,Proxy-value transformation,F1,,,Medium,,,Households converted to people with a national average household size.
+R006,T2,,Outcome,S2,,,,,High,RATIO_NO_COUNTS,Ratio reported without a numerator or denominator. Kept as context and not aggregated.,Request market-rent and actual-rent figures next cycle.
+R007,T3,,Output,S3,,,,,High,BOUNDARY,Temporary construction roles fall outside the H4 boundary (ongoing jobs only).,
+R008,T1,,Output,S1,,,,,High,INPUT_TO_DERIVED,Used as an input to the derived energy-saved value (R011). Not aggregated on its own.,
+R009,T1,,Output,S1,,,,,High,INPUT_TO_DERIVED,Used as an input to the derived energy-saved value (R011). Not aggregated on its own.,
+R010,T1,,Output,S1,,,,,High,INPUT_TO_DERIVED,Used as an input to the derived energy-saved value (R011). Not aggregated on its own.,
+R011,T1,H2,Outcome,S1,Derived-value transformation,,sum_x_rate,R008|R009|R010,Medium,,,Homes retrofitted (Q1-Q3) x average MWh saved per home. Q4 not yet received so the value covers nine months only.
+R011,T1,H1,Outcome,S1,Derived-value transformation + proxy-value transformation,F2,sum_x_rate,R008|R009|R010,Low,,,Energy saved converted to tCO2e with a grid factor. The organization does not report tCO2e so there is no overlap.
+R012,T3,H4,Output,S3,Direct equivalence,,,,High,,,
+R013,T3,H4,Output,S3,Direct equivalence,,,,High,,,Part-time roles counted as jobs (headcount) per the H4 boundary.
+R014,T4,H6,Outcome,S5,Direct equivalence,,,,High,,,Unique individuals per enrolment list.
+R015,T4,,Activity,S5,,,,,High,NON_CONVERTIBLE,Events cannot be converted to people without attendance data.,Showcase narratively.
+R016,T4,,Output,S5,,,,,High,BOUNDARY,One-time emergency support falls outside the H6 boundary (recurring access only).,
+R017,T3,,Output,S3,,,,,High,FUND_LAYER,Intermediary fund total. Investee-level data (R018) is used instead to avoid double-counting across reporting layers.,
+R018,T3,H4,Output,S3,Direct equivalence,,,,Medium,,,Investee-level detail. Overlap with a direct holding is deducted (see overlaps).
+R019,T3,,Output,S4,,,,,High,INPUT_TO_DERIVED,Used as the denominator for the derived employment outcome (R020). Not aggregated on its own.,
+R020,T3,H5,Outcome,S4,Derived-value transformation,,count_x_pct,R019,High,,,Completers x percent employed. Rounded down to whole people.
+R021,T3,,Activity,S4,,,,,High,ACTIVITY_DUPLICATE,Activity-level metric describing the same program as the outcome metric (R020). The outcome-level metric is retained.,
+R022,T3,,,S4,,,,,High,CONTEXTUAL,Stakeholder characteristic. Reported as context (CIDS CharacteristicReport) and not aggregated.,
