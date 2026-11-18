@@ -4,7 +4,7 @@ A worked example of rolling up diverse, bottom-up impact metrics from a multi-as
 
 > **All data is fictional.** The six portfolio organizations, their figures, and the portfolio itself were invented to exercise the method. One conversion factor (F2) is a labelled placeholder. This is an independent learning project and is not affiliated with or endorsed by Common Approach.
 
-**Live dashboard:** enable GitHub Pages on the `/docs` folder (Settings → Pages → Branch: `main`, folder: `/docs`) and it will be served at `https://<your-username>.github.io/<repo-name>/`.
+**Live dashboard:** https://ozturk-zehra.github.io/impact-portfolio-common-approach/
 
 ---
 
